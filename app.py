@@ -30,7 +30,7 @@ def create_store():
     stores.append(new_store)
     return new_store, 201 
 
-@app.post('/store/<string.name>/item')
+@app.post('/store/<string:name>/item')
 def create_item(name):
     request_data = request.get_json()
     for store in stores:
