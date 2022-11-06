@@ -11,7 +11,7 @@ app = Flask(__name__)
 def get_stores():
     return {'stores':list(stores.values())}
 
-
+#1
 
 @app.post('/store')
 def create_store():
