@@ -11,9 +11,9 @@ stores = [
             'price': 10.99
         },
         {
-            'name': 'Rug',
-            'price': 100.67
-        }
+            'name': 'Table',
+            'price': 300
+        },
     ],
 
     }
