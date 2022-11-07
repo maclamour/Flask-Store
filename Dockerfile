@@ -1,7 +1,7 @@
 FROM python:3.10.6
 EXPOSE 5000
 WORKDIR /app
-COPY Pipfile Pipfile.lock 
-RUN pip install pipenv
+COPY ./requirements.txt requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY . .
-CMD ["flask","run", "--host","0.0.0.0"]
+CMD ["flask", "run", "--host", "0.0.0.0"]
