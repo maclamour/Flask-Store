@@ -23,7 +23,7 @@ class Store(MethodView):
         db.session.delete(store)
         db.session.commit()
         
-        return {'message':'Store deleted'}
+        return {'message':'Store deleted'},200
 
 @blp.route('/store')
 class StoreList(MethodView):
